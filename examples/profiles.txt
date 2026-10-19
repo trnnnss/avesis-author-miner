@@ -1,0 +1,4 @@
+# Her satıra bir AVESİS profil veya /yayinlar bağlantısı yazın.
+# Örnekleri kendi profil listenizle değiştirin.
+https://avesis.ebyu.edu.tr/baran
+https://avesis.ebyu.edu.tr/vkaya/yayinlar

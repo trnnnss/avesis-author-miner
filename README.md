@@ -315,7 +315,7 @@ Katkı süreci: [CONTRIBUTING.md](CONTRIBUTING.md). Değişiklikler: [CHANGELOG.
 ```bash
 git init -b main
 git status --short
-git add README.md pyproject.toml requirements.txt requirements-lock.txt .gitignore avesis_miner examples tests docs .github CONTRIBUTING.md CHANGELOG.md WebScraping.py LinkBulucu.py
+git add README.md pyproject.toml requirements.txt requirements-lock.txt .gitignore avesis_miner examples tests docs .github CONTRIBUTING.md CHANGELOG.md LICENSE WebScraping.py LinkBulucu.py
 git diff --cached --stat
 git commit -m "Prepare configurable AVESIS author prediction project"
 ```
@@ -341,7 +341,7 @@ git push -u origin improve-parser
 
 GitHub'da pull request açın, değişiklikleri inceleyin ve CI yeşil olduğunda birleştirin. Ardından yerelde `main` dalına dönüp `git pull` yapın. Tek başınıza çalışırken de bu akış değişikliklerin izlenmesini kolaylaştırır.
 
-Ham akademik veri ve eski raporlar varsayılan olarak paylaşılmaz. Paylaşmak isterseniz kaynakların paylaşım koşullarını değerlendirip açık bir veri politikası belirleyin. **Lisans henüz seçilmedi:** açık kaynak kullanım izinleri için depo sahibi olarak MIT, Apache-2.0 veya uygun başka bir lisansı ayrıca seçmelisiniz. Kod lisansı veri kaynaklarının kullanım haklarını kendiliğinden kapsamaz.
+Ham akademik veri ve eski raporlar varsayılan olarak paylaşılmaz. Paylaşmak isterseniz kaynakların paylaşım koşullarını değerlendirip açık bir veri politikası belirleyin. **Kod MIT lisansı ile paylaşılır:** ayrıntılar için [LICENSE](LICENSE) dosyasına bakın. Kod lisansı veri kaynaklarının kullanım haklarını kendiliğinden kapsamaz.
 
 ## Sorun giderme
 
@@ -371,5 +371,4 @@ Ayrıntılı log için genel seçeneği alt komuttan **önce** kullanın: `pytho
 - Profil keşfi ve yayın ayrıştırma sitenin değişmesiyle bozulabilir. Boş/kısmi sonuç raporu takip edilmelidir.
 
 Teknik yöntem için kaynaklar: [scikit-learn veri sızıntısı ve pipeline rehberi](https://scikit-learn.org/stable/common_pitfalls.html), [olasılık kalibrasyonu](https://scikit-learn.org/stable/modules/calibration.html).
-#   a v e s i s - a u t h o r - m i n e r  
- 
+# avesis-author-miner

@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-tmp*/
+.build-tmp/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+artifacts/
+data/
+.env
+.env.*
+!.env.example
+*.log
+~$*
+# Kişisel/ham kaynaklar açık depoya otomatik eklenmez.
+/*.xlsx
+/*.docx
+/*.pdf

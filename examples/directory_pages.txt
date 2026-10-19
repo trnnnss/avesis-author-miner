@@ -1,0 +1,2 @@
+# Yalnızca HTML içinde profil bağlantıları bulunan dizin sayfaları desteklenir.
+https://avesis.ebyu.edu.tr/arama

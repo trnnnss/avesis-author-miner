@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "target": "first_author",
+  "sklearn_version": "1.9.1",
+  "seed": 42,
+  "min_samples": 10,
+  "cleaning": {
+    "input_rows": 634,
+    "invalid_rows": 0,
+    "conflicting_titles": 2,
+    "conflicting_rows": 4,
+    "duplicate_rows": 5,
+    "excluded_rare_rows": 295,
+    "usable_rows": 330,
+    "authors": 15
+  },
+  "train_rows": 264,
+  "test_rows": 66,
+  "candidates": [
+    {
+      "config": {
+        "kind": "word",
+        "c": 1.0,
+        "classifier": "svm"
+      },
+      "cv_macro_f1": 0.6134765683938745,
+      "cv_std": 0.09942848124083767
+    },
+    {
+      "config": {
+        "kind": "char",
+        "c": 1.0,
+        "classifier": "svm"
+      },
+      "cv_macro_f1": 0.5973572432216918,
+      "cv_std": 0.04613137133674914
+    },
+    {
+      "config": {
+        "kind": "char",
+        "c": 3.0,
+        "classifier": "svm"
+      },
+      "cv_macro_f1": 0.5905826517369555,
+      "cv_std": 0.02891288242981594
+    },
+    {
+      "config": {
+        "kind": "combined",
+        "c": 1.0,
+        "classifier": "svm"
+      },
+      "cv_macro_f1": 0.6226666446030525,
+      "cv_std": 0.07857810974547115
+    },
+    {
+      "config": {
+        "kind": "combined",
+        "c": 3.0,
+        "classifier": "svm"
+      },
+      "cv_macro_f1": 0.6154829326517244,
+      "cv_std": 0.06848379815858788
+    },
+    {
+      "config": {
+        "kind": "combined",
+        "c": 3.0,
+        "classifier": "logistic"
+      },
+      "cv_macro_f1": 0.6080904183484886,
+      "cv_std": 0.06558586436044513
+    }
+  ],
+  "selected": {
+    "kind": "combined",
+    "c": 1.0,
+    "classifier": "svm"
+  },
+  "majority_accuracy": 0.15151515151515152,
+  "accuracy_difference_vs_baseline": 0.06060606060606066,
+  "selection_rule": "Training-only stratified CV macro-F1; holdout evaluated after selection.",
+  "limitations": [
+    "First-author names may identify multiple people.",
+    "Near-duplicate titles may remain; exact normalized duplicates are removed.",
+    "Random title split does not measure future-year or unseen-author generalization.",
+    "Final artifact is refitted on all eligible data; metrics belong to the held-out evaluation model."
+  ],
+  "date": "2026-10-19",
+  "dataset_sha256": "93889899c84e7990150e903d7b3c5e02143e6429f73b3b5a57a6a10febb43884",
+  "dataset_public": false,
+  "test": {
+    "accuracy": 0.7272727272727273,
+    "macro_f1": 0.6785385950603343,
+    "weighted_f1": 0.7214107953238388,
+    "top_3_accuracy": 0.8484848484848485
+  },
+  "word_svm_baseline_test": {
+    "accuracy": 0.6666666666666666,
+    "macro_f1": 0.5655892255892258,
+    "weighted_f1": 0.6300887664524029,
+    "top_3_accuracy": 0.8484848484848485
+  }
+}
